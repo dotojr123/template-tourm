@@ -1,0 +1,27 @@
+{
+    "banner": {
+        "slides": [
+            {
+                "imageUrl": "/assets/img/hero/hero_bg_1_1.jpg",
+                "subtitle": "Bem-vindo à nossa Biblioteca de Componentes",
+                "title": "Exemplo de Uso Avançado",
+                "buttons": [
+                    {
+                        "link": "/tour",
+                        "text": "Explorar Tours"
+                    },
+                    {
+                        "link": "/service",
+                        "text": "Nossos Serviços",
+                        "style": "2"
+                    }
+                ]
+            }
+        ]
+    },
+    "about": {
+        "bannerTitle": "Sobre a Nossa Biblioteca",
+        "bannerSubtitle": "Um conjunto de componentes reutilizáveis",
+        "bannerImageUrl": "/assets/img/bg/breadcumb-bg1-1.jpg"
+    }
+}

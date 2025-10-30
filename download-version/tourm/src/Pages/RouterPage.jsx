@@ -4,7 +4,7 @@ import HomeOne from './HomeOne'
 import HomeTwo from './HomeTwo'
 import HomeThree from './HomeThree'
 import HomeFour from './HomeFour'
-import About from './About'
+import About from './About' // Importando a página About recriada
 import LoadTop from '../Components/LoadTop'
 import Destination from './Destination'
 import DestinationDetails from './DestinationDetails'
@@ -30,6 +30,8 @@ import Error from './Error'
 import Blog from './Blog'
 import BlogDetails from './BlogDetails'
 import Contact from './Contact'
+import LibraryExample from './LibraryExample' // Importando a nova página de exemplo
+
 function RouterPage() {
   return (
     <div>
@@ -40,7 +42,7 @@ function RouterPage() {
           <Route path="/home-tour" element={<HomeTwo />}></Route>
           <Route path="/home-agency" element={<HomeThree />}></Route>
           <Route path="/home-yacht" element={<HomeFour />}></Route>
-          <Route path="/about" element={<About />}></Route>
+          <Route path="/about" element={<About />}></Route> {/* Adicionando a rota de volta */}
           <Route path="/destination" element={<Destination />}></Route>
           <Route path="/destination/:id" element={<DestinationDetails />} />
           <Route path="/service" element={<Service />}></Route>
@@ -64,7 +66,8 @@ function RouterPage() {
           <Route path="/error" element={<Error />}></Route>
           <Route path="/blog" element={<Blog />}></Route>
           <Route path="/blog/:id" element={<BlogDetails />}></Route>
-          <Route path="/contact" element={<Contact />}></Route> 
+          <Route path="/contact" element={<Contact />}></Route>
+          <Route path="/example" element={<LibraryExample />}></Route>
         </Routes>
       </Router>
     </div>
