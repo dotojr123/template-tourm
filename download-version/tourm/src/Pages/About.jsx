@@ -1,34 +1,21 @@
-import React from 'react'
-import HeaderOne from '../Components/Header/HeaderOne'
-import Breadcrumb from '../Components/BreadCrumb/Breadcrumb'
-import AboutFour from '../Components/About/AboutFour'
-import OfferTwo from '../Components/Offer/OfferTwo'
-import ElementSection from '../Components/Elements/ElementSection'
-import TourGuideTwo from '../Components/Guide/TourGuideTwo'
-import TestimonialOne from '../Components/Testimonials/TestimonialOne'
-import BrandOne from '../Components/Brand/BrandOne'
-import GalleryFive from '../Components/Gallery/GalleryFive'
-import FooterFour from '../Components/Footer/FooterFour'
-import ScrollToTop from '../Components/ScrollToTop'
+import React from 'react';
+import AboutLayout from '../library/pages/About';
 
-function About() {
+function AboutPage() {
+    // Dados para a página "Sobre", que serão passados como props para o layout
+    const pageData = {
+        bannerTitle: "About Tourm",
+        bannerSubtitle: "Sua Aventura Começa Aqui",
+        bannerImageUrl: "/assets/img/bg/breadcumb-bg1-1.jpg"
+    };
+
     return (
-        <>
-            <HeaderOne />
-            <Breadcrumb
-                title="About Tourm"
-            />
-            <AboutFour />
-            <OfferTwo />
-            <ElementSection />
-            <TourGuideTwo />
-            <TestimonialOne />
-            <BrandOne/>
-            <GalleryFive />
-            <FooterFour />
-            <ScrollToTop />
-        </>
-    )
+        <AboutLayout
+            bannerTitle={pageData.bannerTitle}
+            bannerSubtitle={pageData.bannerSubtitle}
+            bannerImageUrl={pageData.bannerImageUrl}
+        />
+    );
 }
 
-export default About
+export default AboutPage;

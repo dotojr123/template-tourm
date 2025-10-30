@@ -1,0 +1,169 @@
+/* counter-card start -----------------------*/
+.counterCard {
+  position: relative;
+  background-color: #E9F6F9;
+  padding: 93px 28px;
+  width: 264px;
+  height: 264px;
+  display: block;
+  margin: auto;
+  text-align: center;
+  border-radius: 50%;
+  z-index: 2;
+  margin-top: 158px;
+}
+.counterCard .media-body{
+  text-align: center;
+}
+
+@media (max-width: 1199px) {
+  .counterCard {
+    margin-top: 100px;
+  }
+}
+
+@media (max-width: 767px) {
+  .counterCard {
+    width: 250px;
+    height: 250px;
+    padding: 81px 28px;
+    margin-top: 150px;
+  }
+}
+
+@media (max-width: 575px) {
+  .counterCard {
+    margin-top: 20px;
+  }
+}
+
+.counterCard .counterShape {
+  position: absolute;
+  inset: -24px;
+  width: 312px;
+  height: 312px;
+  border-radius: 50%;
+  border: 1px solid var(--theme-color);
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+@media (max-width: 767px) {
+  .counterCard .counterShape {
+    width: 290px;
+    height: 290px;
+    inset: -20px;
+  }
+}
+
+.counterCard .counterShape span {
+  position: absolute;
+  top: unset;
+  bottom: 55px;
+  right: 15px;
+  width: 24px;
+  height: 24px;
+  display: block;
+  border-radius: 50%;
+  background-color: rgba(28, 168, 203, 0.2);
+  z-index: 2;
+}
+
+@media (max-width: 767px) {
+  .counterCard .counterShape span {
+    bottom: 51px;
+    right: 13px;
+  }
+}
+
+.counterCard .counterShape:after, .counterCard .counterShape:before {
+  content: "";
+  position: absolute;
+  bottom: 20%;
+  right: 7%;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  box-sizing: content-box;
+  background-color: var(--theme-color);
+}
+
+.counterCard .counterShape:after {
+  background-color: var(--theme-color);
+}
+
+.counterCardWrap {
+  margin: 50px 0 25px 0;
+}
+
+@media (max-width: 1199px) {
+  .counterCardWrap {
+    margin: 0;
+  }
+}
+
+.counterCardWrap:nth-child(even) {
+}
+
+@media (max-width: 575px) {
+  .counterCardWrap:nth-child(even) {
+    margin: 70px 0 50px 0;
+  }
+}
+
+.counterCardWrap:nth-child(even) .counterCard {
+  margin-top: 0px;
+}
+
+.counterCardWrap:nth-child(even) .counterCard .counterShape span {
+  top: 24px;
+  right: 43px;
+}
+
+@media (max-width: 767px) {
+  .counterCardWrap:nth-child(even) .counterCard .counterShape span {
+    top: 22px;
+    right: 39px;
+  }
+}
+
+.counterCardWrap:nth-child(even) .counterCard .counterShape:before, .counterCardWrap:nth-child(even) .counterCard .counterShape:after {
+  bottom: unset;
+  top: 10%;
+  right: 16%;
+}
+
+.counterCard .boxNumber {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 48px;
+  text-transform: capitalize;
+  color: var(--black-color2);
+  margin-bottom: 7px;
+}
+
+.counterCard .counterTitle {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  color: var(--black-color2);
+}
+
+.counterCard:hover .counterShape {
+  -webkit-animation: spin 10s linear infinite;
+          animation: spin 10s linear infinite;
+}
+
+.space {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.shapeMockupWrap {
+    position: relative;
+}
+
+.shapeMockup {
+    position: absolute;
+    z-index: -1;
+}
